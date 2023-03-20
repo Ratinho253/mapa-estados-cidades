@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: border-box;
+}
+ul, li {
+    list-style: none;
+}
+
+.map-container{
+    display: flex;
+    padding: 15vh;
+    gap: 113px;
+}
+
+.container-nomes{
+    height: 200px;
+    width: max-content;
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+
+.container-estados{
+    display: flex;
+    margin-top: 150px;
+    width: 375px;
+    height: 417px;
+    background-color: #F5E7D3;
+}
+
+.siglaEstado{
+    height: 100px;
+    width: 100px;
+    margin-top: 37px;
+    margin-left: 35px;
+    background-color: #fa9e27;
+    border: solid 6px #fff;
+	border-radius: 500px 500px 500px 500px;
+}
+
+.nomeEstado{
+    margin-top: 60px;
+    color: #fa9e27;
+    font-size:  2rem;
+}
+
+.nomes-gerais{
+    display: flex;   
+}
+
+.forte{
+    font-size:  1rem;
+    font-weight: 900;
+}
+
+.capitalEstado{
+    font-size:  1rem;
+    font-weight: 540;
+}
+
+.cidades{
+    margin-left: 36px;
+    margin-top: 36px;
+    height: 231px;
+    width: 170%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+path{
+    fill: #eccea7;
+    stroke: #fff;    
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+path:hover{
+    fill: #fa9e27 ;
+}
