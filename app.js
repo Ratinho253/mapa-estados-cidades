@@ -8,7 +8,8 @@ const getEstado = ({ target }) => {
 
   // const nomeEstado = target.getAttribute('title')
   const listarCidades = async (estado) => {
-    const url = `http://localhost:8080/v1/senai/cidades/${estado}`;
+
+    const url = `https://encouraging-crab-leotard.cyclic.app/v1/senai/cidades/${estado}`;
 
     const response = await fetch(url);
     const data = await response.json();
@@ -20,12 +21,14 @@ const getEstado = ({ target }) => {
       cidades: data.cidades,
     };
   };
+
   listarCidades(estado).then((item) => {
-    console.log(item);
+
   });
 
   const dadosEstado = async (estado) => {
-    const url = `http://localhost:8080/senai/estado/sigla/${estado}`;
+
+    const url = `https://encouraging-crab-leotard.cyclic.app/senai/estado/sigla/${estado}`;
 
     const response = await fetch(url);
     const data = await response.json();
@@ -37,10 +40,11 @@ const getEstado = ({ target }) => {
   };
 
   dadosEstado(estado).then((item) => {
-    console.log(item);
+
   });
 
   const cidadesContainer = document.querySelector(".card__cidades-container");
+  
   const preencherDados = async () => {
     const listaCidades = await listarCidades(estado);
     const dadosDoEstado = await dadosEstado(estado);
